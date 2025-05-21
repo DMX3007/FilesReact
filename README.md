@@ -5,6 +5,10 @@
     chmod +x ./build.sh 
     ./build.sh
 
+# Open browser
+
+    http://localhost:33033
+
 # Test credentials
     admin
     admin
