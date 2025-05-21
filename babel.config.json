@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"               // optional; use "automatic" for modern JSX
+      }
+    ],
+    "@babel/preset-typescript"
+  ]
+}
