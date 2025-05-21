@@ -42,7 +42,6 @@ export default function Navigation() {
           <span className="text-sm text-muted-foreground hidden md:inline-block">{account.name}</span>
         </div>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <NavigationMenu>
             <NavigationMenuList>
@@ -66,11 +65,10 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-2">
             <span className="text-sm">{user.username}</span>
             <Avatar className="h-8 w-8">
-              <AvatarFallback>{user.username}</AvatarFallback>
+              <AvatarFallback>{user.username.split(' ').map((item)=> item[0].toUpperCase()).join('')}</AvatarFallback>
             </Avatar>
           </div>
 
-          {/* Mobile menu button */}
           <Button
             variant="ghost"
             size="icon"
@@ -83,7 +81,6 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t">
           <div className="container py-4">

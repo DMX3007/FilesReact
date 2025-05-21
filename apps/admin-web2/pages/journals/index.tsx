@@ -31,7 +31,7 @@ export default function JournalPage() {
   const [date, setDate] = useState<Date>(today)
   const dateKey = formatDateString(date)
 
-  const {data, error, isLoading} = useSWR(dateKey, getJournal) // date format YYYY-MM-DD
+  const {data, error, isLoading} = useSWR(dateKey, getJournal)
 
   useEffect(() => {
     console.log("[📆 Calendar] selected date:", dateKey)

@@ -3,12 +3,14 @@
   "version": "0.1.1",
   "description": "",
   "scripts": {
-    "start:admin-web2": "node apps/admin-web2/app",
+    "start:admin-web2": "npm run build:admin-web:client2 && node apps/admin-web2/app",
     "build2": "npm run build:admin-web:client2",
     "build:admin-web:client2": "webpack --config ./apps/admin-web2/shared/config/webpack.config.js",
+
     "start:admin-web": "node apps/admin-web/app",
     "build": "npm run build:admin-web:client",
     "build:admin-web:client": "webpack --config ./apps/admin-web/public/webpack.config.js",
+    
     "start:file-api": "node apps/file-api/index.js",
     "start:cron-tasks": "node apps/cron/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
