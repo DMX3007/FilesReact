@@ -5,6 +5,10 @@
     chmod +x ./build.sh 
     ./build.sh
 
+# Test credentials
+    admin
+    admin
+
 # Open API Docs
 
     https://petstore.swagger.io/#/files
